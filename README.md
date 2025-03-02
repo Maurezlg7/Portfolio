@@ -6,3 +6,4 @@ Depencias instaladas:
    **npm install gh-pages --save-dev**
    **npm install bootstrap**
    **npm install react-bootstrap bootstrap**
+   **npm i gh-pages**
