@@ -8,7 +8,7 @@ import Contacto from '../components/Contacto';
 
 const router = createBrowserRouter([
     {
-        path: "/maurezlg7-portfolio/",
+        path: "/Portfolio/",
         element: <Navbar />,
         children: [
             {

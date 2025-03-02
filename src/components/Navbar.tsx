@@ -7,7 +7,7 @@ export default function Navbar() {
             <header>
                 <nav className="navbar navbar-expand-lg navbar-dark">
                     <div className="container-fluid d-flex justify-content-between">
-                        <Link className='navbar-brand' to="/maurezlg7-portfolio/">
+                        <Link className='navbar-brand' to="/Portfolio/">
                             <ul className="navbar-nav ms-auto d-flex align-items-center container_home">
                                 <li>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-circle-fill" viewBox="0 0 16 16">
