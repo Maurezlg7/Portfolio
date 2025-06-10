@@ -1,0 +1,230 @@
+.Home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+.Home.hidden {
+    opacity: 0;
+}
+
+.Info-Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    margin-bottom: 5vh;
+}
+
+.Btn-Options {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+}
+
+.Photo {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Photo img {
+    border-radius: 50%;
+    width: 50vh;
+    height: 50vh;
+}
+
+.About-me {
+    width: 50vh;
+    height: 50vh;
+    color: white;
+    font-family: montserrat, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1vh;
+}
+
+.About-me h1 {
+    margin-bottom: 2.5vh;
+    font-weight: bolder;
+    font-size: 5.5vh;
+    width: 100%;
+    text-align: left;
+}
+
+.About-me h2 {
+    margin-bottom: 1.5vh;
+    font-size: 2.5vh;
+    width: 100%;
+    text-align: left;
+}
+
+.Container_btn {
+    width: 100%;
+    max-width: 80vh;
+    margin: 0 auto 5vh auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Container_btn .Button {
+    width: 10vh;
+    height: 10vh;
+    border-radius: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    margin: 1vh;
+    font-size: 1.5vh;
+    font-weight: bolder;
+    border: 1px solid black;
+    transition: background-color 0.7s ease, color 0.7s ease;
+}
+
+.Container_btn .Button:hover {
+    background-color: white;
+    color: black;
+}
+
+.btn-A {
+    background-color: #75715E;
+    color: white !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-A:hover {
+    color: black !important;
+}
+
+.btn-B {
+    background-color: #AE81FF;
+}
+
+.btn-C {
+    background-color: #E6DB74;
+}
+
+.btn-D {
+    background-color: #F44747;
+}
+
+@media (max-width: 1024px) {
+    .Info-Container {
+        flex-direction: column;
+        height: 65%;
+        margin-top: 5vh;
+    }
+
+    .Photo img {
+        width: 35vh;
+        height: 35vh;
+    }
+
+    .About-me {
+        width: 40vh;
+        height: auto;
+        margin-bottom: 5vh;
+        text-align: center;
+    }
+
+    .About-me h1 {
+        font-size: 4vh;
+        text-align: center;
+    }
+
+    .About-me h2 {
+        font-size: 2vh;
+        text-align: center;
+    }
+
+    .About-me p {
+        font-size: 1.5vh;
+        text-align: justify;
+    }
+
+    .Info-Container {
+        flex-direction: column;
+
+    }
+
+    .Container_btn .Button {
+        width: 9vh;
+        height: 9vh;
+        font-size: 1.4vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .Photo img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .About-me {
+        width: 90%;
+        margin-bottom: 40px;
+    }
+
+    .About-me h1 {
+        font-size: 35px;
+    }
+
+    .About-me h2 {
+        font-size: 18px;
+    }
+
+    .Container_btn .Button {
+        width: 80px;
+        height: 80px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Photo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .About-me {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .About-me h1 {
+        font-size: 28px;
+    }
+
+    .About-me h2 {
+        font-size: 16px;
+    }
+
+    .Container_btn .Button {
+        width: 70px;
+        height: 70px;
+        font-size: 10px;
+    }
+}

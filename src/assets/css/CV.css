@@ -1,0 +1,193 @@
+.Body-CV {
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    overflow-y: auto;
+    padding: 0.7vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+.Body-CV.hidden {
+    opacity: 0;
+}
+
+.Mini-Presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    width: 100%;
+    height: 20%;
+}
+
+.f-here {
+    color: goldenrod;
+}
+
+.items {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.item {
+    border: 2px solid white;
+    border-radius: 15px;
+    width: 25rem;
+    height: 32rem;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #333;
+    transition: transform 0.3s ease;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+.Icon {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px 15px 0 0;
+}
+
+.GitHub .Icon {
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.Linkedin .Icon {
+    background: linear-gradient(0deg, rgba(0, 119, 181, 1) 0%, rgba(255, 255, 255, 1) 35%);
+}
+
+.Gmail .Icon {
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 73, 73, 1) 100%);
+}
+
+.Icon svg {
+    width: 100px;
+    height: 100px;
+}
+
+.Linkedin .Icon svg {
+    color: #0077b5;
+}
+
+.Gmail .Icon svg {
+    color: #D93025;
+}
+
+.item  .card-body {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 14px;
+    border-top: 2px solid white;
+}
+
+.item .card-links {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 14px;
+}
+
+.btn_link {
+    width: 130px;
+    height: 40px;
+    background-color: #A6E22E;
+    color: black;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    transition: background-color 0.5s ease, transform 0.2s ease;
+}
+
+.btn_link:hover {
+    color: #A6E22E;
+    background-color: crimson;
+    transform: scale(1.1);
+}
+
+.Gmail .btn_link {
+    width: 200px;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto.ttf');
+}
+
+@media (max-width: 1024px) {
+    .Mini-Presentation {
+        height: 7%;
+    }
+
+    .item {
+        width: 18rem;
+        height: 25rem;
+        margin-top: 5vh;
+    }
+
+    .items .card-body {
+
+        font-size: 15px;
+    }
+
+    .card-body p {
+        font-size: 13px;
+        margin-bottom: 17px;
+    }
+
+    .btn_link {
+        margin: auto;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        width: 90%;
+        max-width: 350px;
+    }
+    .btn_link {
+        margin: auto;
+    }
+}
