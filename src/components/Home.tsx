@@ -27,7 +27,7 @@ export default function Home() {
                 </div>
                 <div className='Btn-Options'>
                     <div className='Container_btn'>
-                        <Link to="pdf/Curriculum vitae - Mauro L. Gomez _ Español.pdf" target="_blank" className='Button btn-A'>Curriculum Vítae</Link>
+                        <Link to="/Portfolio/pdf/CV_MauroGomez_Dev.pdf" target="_blank" className='Button btn-A'>Curriculum Vítae</Link>
                         <Link to="Proyectos" className='Button btn-B'>Proyectos</Link>
                         <Link to="Habilidades" className='Button btn-C'>Habilidades</Link>
                         <Link to="Contacto" className='Button btn-D'>Contacto</Link>
